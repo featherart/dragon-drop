@@ -12,11 +12,6 @@ export const DragonDrop = () => {
     setDragging(true)
   }
 
-  const onMouseUp = e => {
-    e.preventDefault()
-    setDragging(false)
-  }
-
   const onDragStart = e => {
     return e.dataTransfer.setData("text", e.target.id)
   }
